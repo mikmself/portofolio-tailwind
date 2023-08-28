@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="/assets/images/hero.png">
+    <link rel="preload" as="image" href="/assets/images/projects/project.jpg">
+    <link rel="preload" as="image" href="/assets/images/icons/BOOTSTRAP.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/C++.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/CSS.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/DART.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/EXPRESS JS.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/FLUTTER.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/GOLANG.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/HTML.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/JAVA.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/JAVASCRIPT.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/KOTLIN.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/LARAVEL.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/LUMEN.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/MICROSOFT ACCESS.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/MONGO DB.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/MYSQL.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/NEXT JS.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/NUMPY.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/ORACLE.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/PHP.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/POSTGRE SQL.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/REACT.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/SASS.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/SPRINGBOOT.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/SQL SERVER.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/TAILWIND.svg">
+    <link rel="preload" as="image" href="/assets/images/icons/VUE JS.svg">
+    <title>Muhamad Irga - Portfolio</title>
+</head>
+<body>
+    <nav class="bg-black text-white p-4 flex justify-between items-center">
+        <div class="text-2xl font-semibold">MIKM</div>
+        <div class="hidden md:block">
+            <ul class="space-x-6">
+                <li class="inline-block"><a href="#home">Home</a></li>
+                <li class="inline-block"><a href="#about">About</a></li>
+                <li class="inline-block"><a href="#skills">Skills</a></li>
+                <li class="inline-block"><a href="#projects">Projects</a></li>
+                <li class="inline-block"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <section id="home" class="pt-16 pb-24 bg-white text-center">
+        <div class="mb-8 mt-16">
+            <img src="/assets/images/hero.png" alt="IRGA" class="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full object-cover">
+        </div>
+        <h1 class="text-3xl font-semibold name">Muhamad Irga Khoirul Mahfis</h1>
+        <p class="text-gray-600 mt-2">A junior web developer. I like it when I can solve problems with programming, and make good web applications.</p>
+        <div class="mt-8 space-x-4">
+            <a href="https://www.muhamadirga.my.id/assets/downloads/Portofolio.pdf" class="btn-download">Download CV</a>
+            <a href="https://wa.me/6281229473829" class="btn-lets-chat">Let's Chat</a>
+        </div>
+    </section>
+    <section id="about" class="bg-white text-black py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+            <div class="max-w-lg mx-auto">
+                <p class="text-gray-600 mb-4">
+                    Hi, I am Muhamad Irga Khoirul Mahfis. I am a student of Informatics at Amikom University Purwokerto. I have 3 years of experience as a developer, especially in websites. I have a high curiosity in the world of programming, and I will continue to learn consistently.
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto timelines">
+            <div class="study-timeline">
+                <h2 class="text-xl text-black font-bold mb-5">Educations</h2>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Sep 2022 - Now</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Informatics - Amikom University Purwokerto</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Learn everything about technology starting from making front end backend websites, making mobile applications, making IoT, database management, making servers with AWS and so on.</p>
+                    </li>
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jul 2019 - Jun 2022</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Sofware Engineering - SMKN 1 Purwokerto</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Learn basic SQL, object-oriented programming, website creation, and desktop and mobile application creation.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="experience-timeline">
+                <h2 class="text-xl text-black font-bold mb-5">Experiences</h2>
+                <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Mar 2021 - Now</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Backend Developer - Bakaran Project</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Make website applications services according to industry standards, such as making good REST API, making good authentication, managing HTTP requests and responses correctly, managing vps, deploy server with SSH and others.</p>
+                    </li>
+                    <li class="ml-4">
+                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Dec 2020 - Mar 2021</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PKL At PPTIK Bandung Technology Institute</h3>
+                        <p class="text-base font-normal text-gray-500 dark:text-gray-400">learn to make mobile apps with flutter by implementing various widgets and connecting them with rest api to make them into dynamic apps.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+            <div class="flex space-x-2 mb-4 project-tab-container">
+                <button class="skill-tab active" data-tab="language">Language</button>
+                <button class="skill-tab" data-tab="framework">Framework</button>
+                <button class="skill-tab" data-tab="library">Library</button>
+                <button class="skill-tab" data-tab="dbms">DBMS</button>
+            </div>
+            <div class="skill-cards grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+            <div class="flex space-x-2 mb-4 project-tab-container">
+                <button class="project-tab active" data-tab="website">Website</button>
+                <button class="project-tab" data-tab="api">API</button>
+                <button class="project-tab" data-tab="mobile">Mobile</button>
+                <button class="project-tab" data-tab="uiux">UI/UX</button>
+                <button class="project-tab" data-tab="cli">CLI</button>
+            </div>
+            <div class="project-cards grid grid-cols-2 md:grid-cols-4 gap-4">
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center">
+                <div class="social-icons mb-6">
+                    <h2 class="text-3xl font-semibold mb-3">Find Me On</h2>
+                    <div class="icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+                    <input type="text" placeholder="Name" class="input-field mb-3">
+                    <input type="email" placeholder="Email" class="input-field mb-3">
+                    <textarea placeholder="Message" class="input-field mb-3" style="height: 150px;"></textarea>
+                    <br>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black text-white text-center py-4">
+        <p>&copy; Muhamad Irga Khoirul Mahfis <span id="current-year"></span></p>
+    </footer>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
