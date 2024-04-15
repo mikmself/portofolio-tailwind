@@ -131,32 +131,32 @@ const projectsData = {
     ],
     uiux: [
         {
-            title: 'Masih Males Update WKWK 1',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 1',
             icon: '/assets/images/projects/project.jpg',
         },
         {
-            title: 'Masih Males Update WKWK 2',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 2',
             icon: '/assets/images/projects/project.jpg',
         },
         {
-            title: 'Masih Males Update WKWK 3',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 3',
             icon: '/assets/images/projects/project.jpg',
         },
         {
-            title: 'Masih Males Update WKWK 4',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 4',
             icon: '/assets/images/projects/project.jpg',
         },
         {
-            title: 'Masih Males Update WKWK 5',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 5',
             icon: '/assets/images/projects/project.jpg',
         },
         {
-            title: 'Masih Males Update WKWK 6',
+            title: 'Masih Males Update WKWK',
             description: 'Masih males update web portofolio buat project UI/UX 6',
             icon: '/assets/images/projects/project.jpg',
         },
