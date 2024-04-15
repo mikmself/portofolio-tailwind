@@ -2,9 +2,9 @@ document.getElementById('mobile-menu-button').addEventListener('click', function
     document.querySelector('ul').classList.toggle('hidden');
 });
 const skillsData = {
-    language: ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'JAVA', 'C++','DART','KOTLIN','GOLANG'],
-    framework: ['LARAVEL', 'LUMEN', 'BOOTSTRAP','NEXT JS','VUE JS','FLUTTER', 'SPRINGBOOT','EXPRESS JS'],
-    library: ['REACT', 'TAILWIND','SASS','NUMPY'],
+    language: ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'JAVA', 'C++','DART','KOTLIN','GOLANG','PYTHON','SQL'],
+    framework: ['LARAVEL', 'LUMEN', 'BOOTSTRAP','NEXT JS','VUE JS','FLUTTER', 'SPRINGBOOT','EXPRESS JS','CODEIGNITER'],
+    library: ['REACT', 'TAILWIND','SASS','NUMPY','PANDAS','SCKIT LEARN','JQUERY','AXIOS','CHART JS','MATERIAL UI'],
     dbms: ['MYSQL', 'MONGO DB', 'SQL SERVER', 'MICROSOFT ACCESS','ORACLE','POSTGRE SQL']
 };
 const skillTabs = document.querySelectorAll('.skill-tab');
@@ -35,222 +35,162 @@ skillTabs.forEach(tab => {
 const projectsData = {
     website: [
         {
-            title: 'Contoh project Website 1',
-            description: 'Contoh deskripsi project Website 1',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 1',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo1',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Website 2',
-            description: 'Contoh deskripsi project Website 2',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 2',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo2',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Website 3',
-            description: 'Contoh deskripsi project Website 3',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 3',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo3',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Website 4',
-            description: 'Contoh deskripsi project Website 4',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 4',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo4',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Website 5',
-            description: 'Contoh deskripsi project Website 5',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 5',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo5',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Website 6',
-            description: 'Contoh deskripsi project Website 6',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Website 6',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo6',
-            demoLink: 'https://www.example.com'
         },
     ],
     api: [
         {
-            title: 'Contoh project API 1',
-            description: 'Contoh deskripsi project API 1',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 1',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo1',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project API 2',
-            description: 'Contoh deskripsi project API 2',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 2',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo2',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project API 3',
-            description: 'Contoh deskripsi project API 3',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 3',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo3',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project API 4',
-            description: 'Contoh deskripsi project API 4',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 4',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo4',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project API 5',
-            description: 'Contoh deskripsi project API 5',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 5',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo5',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project API 6',
-            description: 'Contoh deskripsi project API 6',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project API 6',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo6',
-            demoLink: 'https://www.example.com'
         },
     ],
     mobile: [
         {
-            title: 'Contoh project Mobile 1',
-            description: 'Contoh deskripsi project Mobile 1',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 1',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo1',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Mobile 2',
-            description: 'Contoh deskripsi project Mobile 2',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 2',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo2',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Mobile 3',
-            description: 'Contoh deskripsi project Mobile 3',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 3',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo3',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Mobile 4',
-            description: 'Contoh deskripsi project Mobile 4',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 4',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo4',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Mobile 5',
-            description: 'Contoh deskripsi project Mobile 5',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 5',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo5',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project Mobile 6',
-            description: 'Contoh deskripsi project Mobile 6',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project Mobile 6',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo6',
-            demoLink: 'https://www.example.com'
         },
     ],
     uiux: [
         {
-            title: 'Contoh project UI/UX 1',
-            description: 'Contoh deskripsi project UI/UX 1',
+            title: 'Masih Males Update WKWK 1',
+            description: 'Masih males update web portofolio buat project UI/UX 1',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo1',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project UI/UX 2',
-            description: 'Contoh deskripsi project UI/UX 2',
+            title: 'Masih Males Update WKWK 2',
+            description: 'Masih males update web portofolio buat project UI/UX 2',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo2',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project UI/UX 3',
-            description: 'Contoh deskripsi project UI/UX 3',
+            title: 'Masih Males Update WKWK 3',
+            description: 'Masih males update web portofolio buat project UI/UX 3',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo3',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project UI/UX 4',
-            description: 'Contoh deskripsi project UI/UX 4',
+            title: 'Masih Males Update WKWK 4',
+            description: 'Masih males update web portofolio buat project UI/UX 4',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo4',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project UI/UX 5',
-            description: 'Contoh deskripsi project UI/UX 5',
+            title: 'Masih Males Update WKWK 5',
+            description: 'Masih males update web portofolio buat project UI/UX 5',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo5',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project UI/UX 6',
-            description: 'Contoh deskripsi project UI/UX 6',
+            title: 'Masih Males Update WKWK 6',
+            description: 'Masih males update web portofolio buat project UI/UX 6',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo6',
-            demoLink: 'https://www.example.com'
         },
     ],
     cli: [
         {
-            title: 'Contoh project CLI 1',
-            description: 'Contoh deskripsi project CLI 1',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 1',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo1',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project CLI 2',
-            description: 'Contoh deskripsi project CLI 2',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 2',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo2',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project CLI 3',
-            description: 'Contoh deskripsi project CLI 3',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 3',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo3',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project CLI 4',
-            description: 'Contoh deskripsi project CLI 4',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 4',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo4',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project CLI 5',
-            description: 'Contoh deskripsi project CLI 5',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 5',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo5',
-            demoLink: 'https://www.example.com'
         },
         {
-            title: 'Contoh project CLI 6',
-            description: 'Contoh deskripsi project CLI 6',
+            title: 'Masih Males Update WKWK',
+            description: 'Masih males update web portofolio buat project CLI 6',
             icon: '/assets/images/projects/project.jpg',
-            githubLink: 'https://github.com/username/project-repo6',
-            demoLink: 'https://www.example.com'
         },
     ]
 };
@@ -259,26 +199,15 @@ const projectCardsContainer = document.querySelector('.project-cards');
 function generateProjectCards(tab) {
     const tabName = tab.dataset.tab;
     const projects = projectsData[tabName];
-    const cardsHTML = projects
+    projectCardsContainer.innerHTML = projects
         .map(project => `
             <div class="project-card">
                 <img src="${project.icon}" alt="${project.title}" class="project-icon">
                 <div class="project-title">${project.title}</div>
                 <div class="project-description">${project.description}</div>
-                <div class="project-icons">
-                    <a href="${project.githubLink}" target="_blank">
-                        <i class="fab fa-github"></i>
-                        Github
-                    </a>
-                    <a href="${project.demoLink}" class="web" target="_blank">
-                        <i class="fa-solid fa-link"></i>
-                        Website
-                    </a>
-                </div>
             </div>
         `)
         .join('');
-    projectCardsContainer.innerHTML = cardsHTML;
 }
 generateProjectCards(projectTabs[0]);
 projectTabs.forEach(tab => {
@@ -290,3 +219,13 @@ projectTabs.forEach(tab => {
 });
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let name = document.getElementById('user_name').value;
+    let email = document.getElementById('user_email').value;
+    let message = document.getElementById('message').value;
+    let subject = "Contact Form Submission from " + email;
+    let body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+    window.location.href = "mailto:mikmself@email.com" + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+});
