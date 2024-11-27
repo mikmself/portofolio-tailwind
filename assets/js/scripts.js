@@ -1,6 +1,3 @@
-document.getElementById('mobile-menu-button').addEventListener('click', function() {
-    document.querySelector('ul').classList.toggle('hidden');
-});
 const skillsData = {
     language: ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'JAVA', 'C++','DART','KOTLIN','GOLANG','PYTHON','SQL'],
     framework: ['LARAVEL', 'LUMEN', 'BOOTSTRAP','NEXT JS','VUE JS','FLUTTER', 'SPRINGBOOT','EXPRESS JS','CODEIGNITER'],
