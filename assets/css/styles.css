@@ -194,3 +194,29 @@ footer {
         width: 95%;
     }
 }
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Gambar dengan shadow lebih lembut */
+#home img {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);  /* Membuat efek bayangan lebih lembut */
+}
+
+/* Penataan responsif untuk gambar potrait */
+@media (max-width: 768px) {
+    #home img {
+        width: 80%;  /* Menyesuaikan lebar gambar agar pas dengan layar */
+    }
+}
