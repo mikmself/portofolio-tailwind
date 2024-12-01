@@ -66,16 +66,31 @@
             </button>
         </div>
     </nav>
-    <section id="home" class="pt-16 pb-24 bg-gradient-to-r from-blue-500 to-purple-600 text-center text-white relative">
-        <div class="mb-8 mt-16">
-            <img src="/assets/images/hero.png" alt="IRGA" class="mx-auto w-32 h-auto md:w-40 md:h-auto rounded-lg shadow-2xl transform transition duration-500 hover:scale-105 hover:shadow-2xl animate-fade-in">
+    <section id="home" class="flex items-center justify-between py-32 px-8 md:px-24 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-xl shadow-2xl transform transition-all duration-500 hover:scale-105">
+        <!-- Text Section -->
+        <div class="w-full md:w-1/2 text-white space-y-8">
+            <h1 class="text-6xl font-extrabold tracking-tight leading-tight text-shadow-md">Selamat datang di Portofolio Saya!</h1>
+            <p class="text-lg text-gray-200 leading-relaxed">
+                Saya menciptakan solusi kreatif dalam dunia teknologi dan desain. Bersama, kita bisa mengubah ide menjadi kenyataan. <br> 
+                Temui dunia saya melalui berbagai proyek yang saya kerjakan. Jangan ragu untuk menghubungi saya!
+            </p>
+            <div class="flex space-x-6 mt-8">
+                <a href="#contact" class="btn-lets-chat py-4 px-10 rounded-full bg-white text-black font-bold shadow-2xl hover:bg-gray-200 transition-all duration-300 transform hover:scale-110">
+                    Let's Chat
+                </a>
+                <a href="/assets/docs/portfolio.pdf" target="_blank" class="btn-download py-4 px-10 rounded-full bg-black text-white font-bold shadow-2xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-110">
+                    Download CV
+                </a>
+            </div>
         </div>
-        <h1 class="text-4xl font-bold tracking-tight leading-tight text-shadow-lg">Muhamad Irga Khoirul Mahfis</h1>
-        <p class="text-lg font-medium mt-2 opacity-80">A junior web developer. I enjoy solving problems with programming and creating web applications that make a difference.</p>
-        
-        <div class="mt-8 space-x-4 flex justify-center">
-            <a href="#" class="btn-download px-6 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-red-500 text-white font-semibold text-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">Download CV</a>
-            <a href="https://wa.me/6281229473829" class="btn-lets-chat px-6 py-3 rounded-full border-2 border-white text-white font-semibold text-lg transform transition duration-300 hover:bg-white hover:text-blue-600 hover:scale-105">Let's Chat</a>
+    
+        <!-- Image Section -->
+        <div class="w-full md:w-1/2 mt-12 md:mt-0 relative">
+            <div class="overflow-hidden rounded-lg shadow-2xl">
+                <img src="/assets/images/hero.png" alt="IRGA" class="w-full h-auto object-cover transform transition-all duration-700 hover:scale-110 hover:shadow-3xl rounded-lg animate-fade-in">
+                <!-- Soft Shadow for Realistic Effect -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black opacity-20 rounded-lg"></div>
+            </div>
         </div>
     </section>
     <section id="about" class="bg-white text-black py-16">
