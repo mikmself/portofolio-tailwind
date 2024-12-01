@@ -66,61 +66,16 @@
             </button>
         </div>
     </nav>
-    <section id="home" class="relative pt-32 pb-32 bg-gradient-to-r from-teal-500 via-blue-600 to-indigo-700 text-white overflow-hidden">
-        <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('/assets/images/background.jpg');"></div>
-    
-        <!-- Hero Section -->
-        <div class="relative z-10 px-8 md:px-24 text-center flex flex-col items-center space-y-8">
-            <!-- Avatar: Ubah jadi kotak dengan efek hover -->
-            <div class="group relative mb-6">
-                <img src="/assets/images/hero.png" alt="Muhamad Irga Khoirul Mahfis" class="w-48 h-48 object-cover border-4 border-white shadow-lg transform transition-transform group-hover:scale-105 duration-300 rounded-lg">
-            </div>
-    
-            <!-- Main Heading -->
-            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-center opacity-95 animate__animated animate__fadeIn animate__delay-1s">
-                Muhamad Irga Khoirul Mahfis
-            </h1>
-    
-            <!-- Subtitle -->
-            <p class="text-lg md:text-xl max-w-3xl mx-auto text-center opacity-85 animate__animated animate__fadeIn animate__delay-1.5s">
-                A Junior Web Developer who loves creating fast, responsive websites and solving real-world problems with code. Always seeking to improve and innovate.
-            </p>
-    
-            <!-- Skill Icons Section with Larger Hover Effects -->
-            <div class="flex justify-center gap-12 mb-12">
-                <div class="group transform transition-all duration-300 hover:scale-125">
-                    <img src="/assets/images/icons/HTML.svg" alt="HTML" class="w-20 h-20 mb-2">
-                    <span class="text-lg">HTML</span>
-                </div>
-                <div class="group transform transition-all duration-300 hover:scale-125">
-                    <img src="/assets/images/icons/CSS.svg" alt="CSS" class="w-20 h-20 mb-2">
-                    <span class="text-lg">CSS</span>
-                </div>
-                <div class="group transform transition-all duration-300 hover:scale-125">
-                    <img src="/assets/images/icons/JAVASCRIPT.svg" alt="JavaScript" class="w-20 h-20 mb-2">
-                    <span class="text-lg">JS</span>
-                </div>
-                <div class="group transform transition-all duration-300 hover:scale-125">
-                    <img src="/assets/images/icons/REACT.svg" alt="React" class="w-20 h-20 mb-2">
-                    <span class="text-lg">React</span>
-                </div>
-            </div>
-    
-            <!-- Call-to-Action Buttons: New color, larger size, and rounded -->
-            <div class="flex gap-10 mb-16 justify-center">
-                <a href="#" class="px-10 py-5 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full text-lg font-bold text-black shadow-2xl transform hover:scale-110 transition-all duration-300 ease-in-out hover:from-yellow-500 hover:to-yellow-700" onclick="downloadCV()">Download CV</a>
-                <a href="https://wa.me/6281229473829" class="px-10 py-5 bg-gradient-to-r from-green-400 to-green-600 rounded-full text-lg font-bold text-white shadow-2xl transform hover:scale-110 transition-all duration-300 ease-in-out hover:from-green-500 hover:to-green-700">Let's Chat</a>
-            </div>
+    <section id="home" class="pt-16 pb-24 bg-gradient-to-r from-blue-500 to-purple-600 text-center text-white">
+        <div class="mb-8 mt-16">
+            <img src="/assets/images/hero.png" alt="IRGA" class="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-xl transform transition duration-500 hover:scale-110 hover:shadow-2xl">
         </div>
-    
-        <!-- Scroll Indicator with Modern Arrow -->
-        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate__animated animate__fadeIn animate__delay-3s">
-            <a href="#about" class="text-white text-4xl cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
-                </svg>
-            </a>
+        <h1 class="text-4xl font-bold tracking-tight leading-tight text-shadow-lg">Muhamad Irga Khoirul Mahfis</h1>
+        <p class="text-lg font-medium mt-2 opacity-80">A junior web developer. I enjoy solving problems with programming and creating web applications that make a difference.</p>
+        
+        <div class="mt-8 space-x-4 flex justify-center">
+            <a href="#" class="btn-download px-6 py-3 rounded-full bg-gradient-to-r from-yellow-400 to-red-500 text-white font-semibold text-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl" onclick="downloadCV()">Download CV</a>
+            <a href="https://wa.me/6281229473829" class="btn-lets-chat px-6 py-3 rounded-full border-2 border-white text-white font-semibold text-lg transform transition duration-300 hover:bg-white hover:text-blue-600 hover:scale-105">Let's Chat</a>
         </div>
     </section>
     <section id="about" class="bg-white text-black py-16">
