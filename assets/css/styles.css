@@ -1,44 +1,124 @@
-.btn-lets-chat {
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a; /* Dark background for professionalism */
+    color: #fff;
 }
-.btn-download{
+
+/* Button Styles */
+.btn-lets-chat, .btn-download {
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid #ffffff;
     border-radius: 5px;
+    font-weight: bold;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
     color: white;
-    background-color: black;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
 }
+.btn-lets-chat {
+    background: transparent;
+    border-color: #ec4899;
+}
+.btn-lets-chat:hover {
+    background-color: #ec4899;
+    color: #fff;
+    transform: scale(1.05);
+}
+.btn-download {
+    background-color: #ec4899;
+    border-color: #ec4899;
+}
+.btn-download:hover {
+    background-color: #f97316;
+    border-color: #f97316;
+    transform: scale(1.05);
+}
+
+/* Fade In Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Parallax Effect on Background Image */
+#home .bg-cover {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 3D Hover Effect for Image */
+.image-content img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Glassmorphism Effect */
+#home .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Trigger Animations */
+@keyframes scroll-effect {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-scroll {
+    animation: scroll-effect 1s ease-out;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    #home .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-content {
+        margin-bottom: 20px;
+    }
+    .btn-lets-chat, .btn-download {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .image-content img {
+        max-width: 100%;
+    }
+}
+
+/* Styling for About Section */
 #about {
     background-color: #f8f8f8;
     color: black;
 }
-#about h2 {
+
+#about h2, #about p {
     color: black;
 }
-#about p {
-    color: black;
-}
-.timelines{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2cm;
-}
-.study-timeline, .experience-timeline{
-    width: 45%;
-}
-#skills {
-    background-color: #fff;
-}
+
+/* Skill Tabs and Cards */
 .skill-tab {
     padding: 6px 12px;
     background-color: #fff;
@@ -52,13 +132,15 @@
     color: #fff;
     border-color: black;
 }
+
 .skill-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     justify-items: center;
     margin-top: 1rem;
 }
+
 .skill-card {
     width: 100%;
     padding: 1rem;
@@ -72,50 +154,8 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.skill-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.skill-icon img {
-    max-width: 100%;
-    height: auto;
-    max-height: 3rem;
-}
-.skill-title {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-}
-#contact {
-    background-color: #fff;
-}
-.social-icons {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-icon {
-    display: inline-block;
-    margin: 0 0.5rem;
-    transition: transform 0.2s;
-}
-.social-icon img {
-    max-width: 32px;
-    height: auto;
-}
-.social-icon:hover {
-    transform: translateY(-3px);
-}
-.contact-form {
-    text-align: center;
-}
+
+/* Contact Form */
 .input-field {
     width: 60%;
     padding: 0.75rem;
@@ -123,9 +163,7 @@
     border-radius: 4px;
     margin-bottom: 1rem;
 }
-.input-field::placeholder {
-    color: #999;
-}
+
 .submit-button {
     padding: 0.5rem 1rem;
     background-color: black;
@@ -138,85 +176,9 @@
 .submit-button:hover {
     background-color: #0056b3;
 }
+
+/* Footer */
 footer {
     font-size: 14px;
     color: white;
-}
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: black;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        padding: 0.5rem 0;
-        border: 1px solid #333;
-        border-top: none;
-    }
-    nav ul.hidden {
-        display: block;
-    }
-    nav ul li {
-        margin: 0;
-        padding: 0.5rem;
-        text-align: center;
-    }
-    nav ul li a {
-        color: white;
-    }
-}
-@media only screen and (max-width: 512px) {
-    h1.name{
-        font-size: 25px;
-    }
-    #about {
-        padding: .2cm;
-    }
-    .timelines{
-        flex-direction: column;
-        justify-content: center;
-        padding-left: .2cm;
-    }
-    .study-timeline, .experience-timeline{
-        width: 90%;
-    }
-    .project-cards {
-        grid-template-columns: repeat(1, 1fr);
-        padding: .2cm;
-    }
-    .skill-cards {
-        grid-template-columns: repeat(2, 1fr); 
-        padding: .2cm;
-    }
-    .input-field {
-        width: 95%;
-    }
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in {
-    animation: fade-in 1s ease-out;
-}
-
-/* Gambar dengan shadow lebih lembut */
-#home img {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);  /* Membuat efek bayangan lebih lembut */
-}
-
-/* Penataan responsif untuk gambar potrait */
-@media (max-width: 768px) {
-    #home img {
-        width: 80%;  /* Menyesuaikan lebar gambar agar pas dengan layar */
-    }
 }

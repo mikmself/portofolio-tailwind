@@ -66,30 +66,33 @@
             </button>
         </div>
     </nav>
-    <section id="home" class="flex items-center justify-between py-32 px-8 md:px-24 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-xl shadow-2xl transform transition-all duration-500 hover:scale-105">
-        <!-- Text Section -->
-        <div class="w-full md:w-1/2 text-white space-y-8">
-            <h1 class="text-6xl font-extrabold tracking-tight leading-tight text-shadow-md">Selamat datang di Portofolio Saya!</h1>
-            <p class="text-lg text-gray-200 leading-relaxed">
-                Saya menciptakan solusi kreatif dalam dunia teknologi dan desain. Bersama, kita bisa mengubah ide menjadi kenyataan. <br> 
-                Temui dunia saya melalui berbagai proyek yang saya kerjakan. Jangan ragu untuk menghubungi saya!
-            </p>
-            <div class="flex space-x-6 mt-8">
-                <a href="#contact" class="btn-lets-chat py-4 px-10 rounded-full bg-white text-black font-bold shadow-2xl hover:bg-gray-200 transition-all duration-300 transform hover:scale-110">
-                    Let's Chat
-                </a>
-                <a href="/assets/docs/portfolio.pdf" target="_blank" class="btn-download py-4 px-10 rounded-full bg-black text-white font-bold shadow-2xl hover:bg-gray-800 transition-all duration-300 transform hover:scale-110">
-                    Download CV
-                </a>
-            </div>
-        </div>
+    <section id="home" class="relative flex items-center justify-between min-h-screen py-20">
+        <!-- Parallax background -->
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center bg-fixed" style="background-image: url('/assets/images/bg.jpg'); z-index: -1;"></div>
     
-        <!-- Image Section -->
-        <div class="w-full md:w-1/2 mt-12 md:mt-0 relative">
-            <div class="overflow-hidden rounded-lg shadow-2xl">
-                <img src="/assets/images/hero.png" alt="IRGA" class="w-full h-auto object-cover transform transition-all duration-700 hover:scale-110 hover:shadow-3xl rounded-lg animate-fade-in">
-                <!-- Soft Shadow for Realistic Effect -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black opacity-20 rounded-lg"></div>
+        <!-- Content -->
+        <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
+            <!-- Text Section -->
+            <div class="text-content w-full md:w-1/2 text-white relative z-10 animate-fade-in">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                        Transform Your Digital World
+                    </span>
+                </h1>
+                <p class="text-lg sm:text-xl mb-8 leading-relaxed">
+                    We craft engaging experiences that elevate your brand and deliver results. Let's make something amazing together!
+                </p>
+    
+                <!-- Call to Action Buttons -->
+                <div class="flex space-x-4">
+                    <a href="#contact" class="btn-lets-chat">Let's Chat</a>
+                    <a href="/portfolio" class="btn-download">Download Portfolio</a>
+                </div>
+            </div>
+    
+            <!-- Image Section -->
+            <div class="image-content w-full md:w-1/2 flex justify-center relative z-10 animate-fade-in">
+                <img src="/assets/images/hero.png" alt="IRGA" class="mx-auto w-96 h-auto md:w-[500px] md:h-auto rounded-lg shadow-2xl transform transition duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-3">
             </div>
         </div>
     </section>
