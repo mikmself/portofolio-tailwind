@@ -4,18 +4,12 @@ const skillsData = {
     library: ['REACT', 'TAILWIND', 'SASS', 'NUMPY', 'PANDAS', 'SCKIT LEARN', 'JQUERY', 'AXIOS', 'CHART JS', 'MATERIAL UI'],
     dbms: ['MYSQL', 'MONGO DB', 'SQL SERVER', 'MICROSOFT ACCESS', 'ORACLE', 'POSTGRE SQL']
 };
-
 const skillTabs = document.querySelectorAll('.skill-tab');
 const skillCardsContainer = document.querySelector('.skill-cards');
-
-// Function to generate skill cards based on the selected tab
 function generateSkillCards(tab) {
     const tabName = tab.dataset.tab;
     const skills = skillsData[tabName];
-
-    // Ensure the tabName exists in skillsData
     if (!skills) return;
-
     const cardsHTML = skills.map(skill => `
         <div class="skill-card">
             <div class="skill-icon">
@@ -24,14 +18,9 @@ function generateSkillCards(tab) {
             <div class="skill-title">${skill}</div>
         </div>
     `).join('');
-
     skillCardsContainer.innerHTML = cardsHTML;
 }
-
-// Initialize the first tab's skill cards
 generateSkillCards(skillTabs[0]);
-
-// Add event listeners to skill tabs
 skillTabs.forEach(tab => {
     tab.addEventListener('click', () => {
         skillTabs.forEach(t => t.classList.remove('active'));
@@ -39,29 +28,20 @@ skillTabs.forEach(tab => {
         generateSkillCards(tab);
     });
 });
-
-// Display the current year
 document.getElementById('current-year').textContent = new Date().getFullYear();
-
-// Handle contact form submission
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
-
     const name = document.getElementById('user_name').value;
     const email = document.getElementById('user_email').value;
     const message = document.getElementById('message').value;
-
-    // Basic validation
     if (!name || !email || !message) {
         alert('Please fill in all the fields.');
         return;
     }
-
     const subject = `Contact Form Submission from ${email}`;
     const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
     window.location.href = `mailto:mikmself@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
-
 window.addEventListener('load', function() {
     const homeSection = document.querySelector('#home');
     homeSection.classList.add('animate-scroll');

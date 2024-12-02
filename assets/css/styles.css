@@ -1,14 +1,11 @@
-/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1a1a1a; /* Dark background for professionalism */
+    background-color: #1a1a1a; 
     color: #fff;
 }
-
-/* Button Styles */
 .btn-lets-chat, .btn-download {
     padding: 10px 20px;
     border: 2px solid #ffffff;
@@ -37,8 +34,6 @@ body {
     border-color: #f97316;
     transform: scale(1.05);
 }
-
-/* Fade In Animation */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -52,20 +47,14 @@ body {
 .animate-fade-in {
     animation: fade-in 1s ease-out;
 }
-
-/* Parallax Effect on Background Image */
 #home .bg-cover {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-
-/* 3D Hover Effect for Image */
 .image-content img:hover {
     transform: rotate(5deg) scale(1.1);
 }
-
-/* Glassmorphism Effect */
 #home .glass-effect {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -73,8 +62,6 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-/* Scroll Trigger Animations */
 @keyframes scroll-effect {
     0% {
         opacity: 0;
@@ -88,8 +75,6 @@ body {
 .animate-scroll {
     animation: scroll-effect 1s ease-out;
 }
-
-/* Responsive Layout */
 @media (max-width: 768px) {
     #home .container {
         flex-direction: column;
@@ -108,8 +93,6 @@ body {
         max-width: 60%;
     }
 }
-
-/* Styling for About Section */
 #about {
     background-color: #f8f8f8;
     color: black;
@@ -118,8 +101,6 @@ body {
 #about h2, #about p {
     color: black;
 }
-
-/* Skill Tabs and Cards */
 .skill-tab {
     padding: 6px 12px;
     background-color: #fff;
@@ -133,7 +114,6 @@ body {
     color: #fff;
     border-color: black;
 }
-
 .skill-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -141,7 +121,6 @@ body {
     justify-items: center;
     margin-top: 1rem;
 }
-
 .skill-card {
     width: 100%;
     padding: 1rem;
@@ -155,8 +134,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-/* Contact Form */
 .input-field {
     width: 60%;
     padding: 0.75rem;
@@ -177,8 +154,6 @@ body {
 .submit-button:hover {
     background-color: #0056b3;
 }
-
-/* Footer */
 footer {
     font-size: 14px;
     color: white;
