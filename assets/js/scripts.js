@@ -62,14 +62,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     window.location.href = `mailto:mikmself@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
-// Scroll-triggered animation for home section
-document.addEventListener("scroll", function() {
+window.addEventListener('load', function() {
     const homeSection = document.querySelector('#home');
-    if (window.scrollY > 150) {
-        homeSection.classList.add('animate-scroll');
-    }
+    homeSection.classList.add('animate-scroll');
 });
-
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
