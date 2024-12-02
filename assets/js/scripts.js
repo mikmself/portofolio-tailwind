@@ -4,6 +4,7 @@ const skillsData = {
     library: ['REACT', 'TAILWIND', 'SASS', 'NUMPY', 'PANDAS', 'SCKIT LEARN', 'JQUERY', 'AXIOS', 'CHART JS', 'MATERIAL UI'],
     dbms: ['MYSQL', 'MONGO DB', 'SQL SERVER', 'MICROSOFT ACCESS', 'ORACLE', 'POSTGRE SQL']
 };
+
 const skillTabs = document.querySelectorAll('.skill-tab');
 const skillCardsContainer = document.querySelector('.skill-cards');
 function generateSkillCards(tab) {
@@ -20,7 +21,7 @@ function generateSkillCards(tab) {
     `).join('');
     skillCardsContainer.innerHTML = cardsHTML;
 }
-generateSkillCards(skillTabs[0]);
+generateSkillCards(skillTabs[0]); 
 skillTabs.forEach(tab => {
     tab.addEventListener('click', () => {
         skillTabs.forEach(t => t.classList.remove('active'));
@@ -55,4 +56,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
             behavior: 'smooth'
         });
     });
+});
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
