@@ -67,31 +67,27 @@
         </div>
     </nav>
     <section id="home" class="relative flex items-center justify-between min-h-screen py-20">
-        <!-- Parallax background -->
-        <div class="absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center bg-fixed" style="background-image: url('/assets/images/bg.jpg'); z-index: -1;"></div>
-    
-        <!-- Content -->
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-cover bg-center bg-fixed bg-gradient-to-r from-black to-transparent"></div>
         <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
-            <!-- Text Section -->
-            <div class="text-content w-full md:w-1/2 text-white relative z-10 animate-fade-in">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+            <div class="text-content w-full md:w-1/2 text-white relative z-10 animate__animated animate__fadeIn">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate__animated animate__fadeIn">
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                         Transform Your Digital World
                     </span>
                 </h1>
-                <p class="text-lg sm:text-xl mb-8 leading-relaxed">
+                <p class="text-lg sm:text-xl mb-8 leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
                     We craft engaging experiences that elevate your brand and deliver results. Let's make something amazing together!
                 </p>
     
                 <!-- Call to Action Buttons -->
                 <div class="flex space-x-4">
-                    <a href="#contact" class="btn-lets-chat">Let's Chat</a>
-                    <a href="/portfolio" class="btn-download">Download Portfolio</a>
+                    <a href="#contact" class="btn-lets-chat transform transition-all hover:scale-110 hover:shadow-xl hover:bg-indigo-500 hover:text-white px-8 py-3 rounded-full border-2 border-indigo-500">Let's Chat</a>
+                    <a href="/portfolio" class="btn-download transform transition-all hover:scale-110 hover:shadow-xl hover:bg-indigo-500 hover:text-white px-8 py-3 rounded-full border-2 border-indigo-500">Download Portfolio</a>
                 </div>
             </div>
     
             <!-- Image Section -->
-            <div class="image-content w-full md:w-1/2 flex justify-center relative z-10 animate-fade-in">
+            <div class="image-content w-full md:w-1/2 flex justify-center relative z-10 animate__animated animate__fadeIn">
                 <img src="/assets/images/hero.png" alt="IRGA" class="mx-auto w-96 h-auto md:w-[500px] md:h-auto rounded-lg shadow-2xl transform transition duration-500 hover:scale-110 hover:shadow-2xl hover:rotate-3">
             </div>
         </div>
