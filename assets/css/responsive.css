@@ -1,25 +1,40 @@
 @media (max-width: 768px) {
+    nav{
+        max-width: 100vw !important;
+    }
     #home .container {
         flex-direction: column;
         text-align: center;
+        margin-top: 2cm;
     }
-    .text-content {
+    #home h1{
+        font-size: 25px;
         margin-top: 1cm;
     }
+    #home p{
+        font-size: 14px;
+        margin-top: -.5cm;
+    }
+
+
     .btn-lets-chat, .btn-download {
-        width: 100%;
-        padding: 15px;
+        width: 90%;
+        padding: 5px;
         margin-top: 10px;
     }
+
     .image-content img {
         max-width: 60%;
     }
+
     .timeline-container {
         grid-template-columns: 1fr;
     }
+
     .timeline-item {
         margin-bottom: 2rem;
     }
+
     .nav-links {
         position: absolute;
         top: 50px;
@@ -36,23 +51,29 @@
         transform: translateY(-20px);
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
+
     .nav-links li {
         padding: 1cm;
     }
+
     .nav-links.active {
         display: flex;
         opacity: 1;
         transform: translateY(0);
     }
+
     .hamburger-menu {
         display: flex;
     }
+
     #about {
         padding: .5cm !important;
     }
+
     .skill-cards {
         grid-template-columns: 1fr 1fr;
     }
+
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
