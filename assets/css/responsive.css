@@ -114,4 +114,7 @@
     #personal-interests .interest-card{
         width: 100% !important;
     }
+    #contact{
+        padding: .2cm;
+    }
 }
