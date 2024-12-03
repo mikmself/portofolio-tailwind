@@ -1,6 +1,6 @@
 const skillsData = {
-    language: ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'JAVA', 'C++', 'DART', 'KOTLIN', 'GOLANG', 'PYTHON', 'SQL'],
-    framework: ['LARAVEL', 'LUMEN', 'BOOTSTRAP', 'NEXT JS', 'VUE JS', 'FLUTTER', 'SPRINGBOOT', 'EXPRESS JS', 'CODEIGNITER'],
+    language: ['HTML', 'CSS', 'JAVASCRIPT', 'PHP', 'JAVA', 'C++', 'DART','PYTHON', 'SQL'],
+    framework: ['LARAVEL', 'LUMEN', 'BOOTSTRAP', 'NEXT JS', 'FLUTTER', 'SPRINGBOOT', 'EXPRESS JS', 'CODEIGNITER'],
     library: ['REACT', 'TAILWIND', 'SASS', 'NUMPY', 'PANDAS', 'SCKIT LEARN', 'JQUERY', 'AXIOS', 'CHART JS', 'MATERIAL UI'],
     dbms: ['MYSQL', 'MONGO DB', 'SQL SERVER', 'MICROSOFT ACCESS', 'ORACLE', 'POSTGRE SQL']
 };
