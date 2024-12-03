@@ -365,3 +365,59 @@ nav {
         grid-template-columns: 1fr 1fr;
     }
 }
+/* General Styles */
+#testimonials {
+    position: relative;
+    background: linear-gradient(135deg, #3b0086, #e91e63, #ff9800);
+    overflow: hidden;
+    height: 20cm;
+}
+
+/* Heading */
+#testimonials h2 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonial Items */
+.testimonial-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-top: 4cm;
+}
+
+.testimonial-item.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.testimonial-item .avatar img {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.75;
+}
+
+/* Slider Controls */
+.slider-controls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10cm;
+}
+
+.slider-controls button:hover {
+    transform: scale(1.1);
+}

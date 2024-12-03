@@ -208,24 +208,50 @@
             </div>
         </div>
     </section>
-    <section id="testimonials" class="bg-gray-100 py-16">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-6">What People Say</h2>
-            <div class="flex justify-center space-x-8">
-                <div class="testimonial-card max-w-xs bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-lg font-semibold text-gray-800 mb-4">"Muhamad Irga adalah pengembang yang berbakat. Karyanya pada aplikasi web kami sangat mengesankan, dan dia selalu mengirimkan hasil tepat waktu."</p>
-                    <p class="text-gray-600">- Andi Wijaya, CEO di Solusi Teknologi</p>
+    <section id="testimonials" class="relative bg-gradient-to-br from-indigo-700 via-purple-800 to-pink-600 py-24 overflow-hidden">
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-5xl font-extrabold text-white mb-16">What People Say</h2>
+            <div class="testimonials-slider relative">
+                <div class="testimonial-item mx-auto max-w-3xl bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-105">
+                    <div class="avatar mb-6">
+                        <img src="https://i.pravatar.cc/150?img=10" alt="Andi Wijaya" class="w-20 h-20 rounded-full border-4 border-pink-500 mx-auto">
+                    </div>
+                    <blockquote class="text-xl text-gray-800 italic font-light leading-relaxed">
+                        "Muhamad Irga adalah pengembang yang berbakat. Karyanya pada aplikasi web kami sangat mengesankan, dan dia selalu mengirimkan hasil tepat waktu."
+                    </blockquote>
+                    <p class="mt-4 text-pink-500 font-bold">- Andi Wijaya, CEO di Solusi Teknologi</p>
                 </div>
-                <div class="testimonial-card max-w-xs bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-lg font-semibold text-gray-800 mb-4">"Saya memiliki kesempatan untuk bekerja dengan Irga selama proyek universitas kami. Dedikasinya dan kemampuan memecahkan masalahnya luar biasa."</p>
-                    <p class="text-gray-600">- Rina Suryani, Manajer Proyek di DevCorp</p>
+                <div class="testimonial-item mx-auto max-w-3xl bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-105">
+                    <div class="avatar mb-6">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Rina Suryani" class="w-20 h-20 rounded-full border-4 border-purple-500 mx-auto">
+                    </div>
+                    <blockquote class="text-xl text-gray-800 italic font-light leading-relaxed">
+                        "Saya memiliki kesempatan untuk bekerja dengan Irga selama proyek universitas kami. Dedikasinya dan kemampuan memecahkan masalahnya luar biasa."
+                    </blockquote>
+                    <p class="mt-4 text-purple-500 font-bold">- Rina Suryani, Manajer Proyek di DevCorp</p>
                 </div>
-                <div class="testimonial-card max-w-xs bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-lg font-semibold text-gray-800 mb-4">"Irga bukan hanya seorang pengembang, dia juga seorang pemain tim yang hebat. Dia selalu memiliki sikap positif dan membantu orang lain mencapai tujuan mereka."</p>
-                    <p class="text-gray-600">- Budi Santoso, Pemimpin Tim di Web Studios</p>
+                <div class="testimonial-item mx-auto max-w-3xl bg-white p-8 rounded-2xl shadow-xl transform transition-all duration-500 hover:scale-105">
+                    <div class="avatar mb-6">
+                        <img src="https://i.pravatar.cc/150?img=14" alt="Budi Santoso" class="w-20 h-20 rounded-full border-4 border-blue-500 mx-auto">
+                    </div>
+                    <blockquote class="text-xl text-gray-800 italic font-light leading-relaxed">
+                        "Irga bukan hanya seorang pengembang, dia juga seorang pemain tim yang hebat. Dia selalu memiliki sikap positif dan membantu orang lain mencapai tujuan mereka."
+                    </blockquote>
+                    <p class="mt-4 text-blue-500 font-bold">- Budi Santoso, Pemimpin Tim di Web Studios</p>
                 </div>
             </div>
+            <div class="slider-controls flex justify-center mt-8">
+                <button class="prev-btn bg-white w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition transform hover:scale-110 focus:outline-none flex justify-center items-center">
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                </button>
+                <button class="next-btn bg-white w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition transform hover:scale-110 focus:outline-none flex justify-center items-center ml-4">
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                </button>
+            </div>
         </div>
+        <!-- Background Decorations -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-pink-400 rounded-full opacity-20 blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-400 rounded-full opacity-20 blur-3xl"></div>
     </section>
     <section id="personal-interests" class="bg-white py-16">
         <div class="container mx-auto text-center">

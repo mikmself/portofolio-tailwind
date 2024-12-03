@@ -62,3 +62,57 @@ const navLinks = document.getElementById('nav-links');
 hamburgerMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+const testimonials = document.querySelectorAll('.testimonial-item');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentSlide = 0;
+let interval;
+
+// Fungsi untuk memperbarui testimonial
+function updateTestimonials(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('active');
+        if (i === index) {
+            testimonial.classList.add('active');
+        }
+    });
+}
+
+// Fungsi untuk berganti ke slide berikutnya
+function goToNextSlide() {
+    currentSlide = (currentSlide + 1) % testimonials.length;
+    updateTestimonials(currentSlide);
+}
+
+// Fungsi untuk berganti ke slide sebelumnya
+function goToPrevSlide() {
+    currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
+    updateTestimonials(currentSlide);
+}
+
+// Event listener untuk tombol previous
+prevBtn.addEventListener('click', () => {
+    goToPrevSlide();
+    resetAutoChange();  // Reset otomatis berganti saat interaksi
+});
+
+// Event listener untuk tombol next
+nextBtn.addEventListener('click', () => {
+    goToNextSlide();
+    resetAutoChange();  // Reset otomatis berganti saat interaksi
+});
+
+// Fungsi untuk memulai otomatis berganti testimonial
+function startAutoChange() {
+    interval = setInterval(goToNextSlide, 3000);  // Ganti slide setiap 3 detik
+}
+
+// Fungsi untuk reset interval otomatis ketika ada interaksi
+function resetAutoChange() {
+    clearInterval(interval);  // Hentikan interval yang sedang berjalan
+    startAutoChange();  // Mulai interval kembali
+}
+
+// Inisialisasi load pertama dan mulai otomatis berganti
+updateTestimonials(currentSlide);
+startAutoChange();
