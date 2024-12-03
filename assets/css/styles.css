@@ -270,3 +270,98 @@ nav {
     background-color: white;
     border-radius: 5px;
 }
+/* General Section Styles */
+#skills {
+    background: linear-gradient(135deg, #6a1b9a, #3f51b5, #2196f3);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Title Styles */
+#skills h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Tab Button Styles */
+.skill-tab {
+    font-size: 1.125rem;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.skill-tab:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Active Tab Style */
+.skill-tab.active {
+    background: white;
+    color: #3f51b5;
+    border-color: #3f51b5;
+}
+
+/* Skill Card Styles */
+.skill-cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Atur tinggi icon */
+    margin-bottom: 20px; /* Menambahkan jarak antara gambar dan judul skill */
+}
+
+.skill-icon img {
+    width: 70px; /* Ukuran lebih besar untuk gambar */
+    height: 70px; /* Ukuran lebih besar untuk gambar */
+    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+    transition: transform 0.3s ease;
+}
+
+/* Efek Hover pada Gambar */
+.skill-card:hover .skill-icon img {
+    transform: scale(1.2); /* Membesarkan gambar sedikit saat hover */
+}
+
+
+.skill-card:hover .skill-icon img {
+    transform: rotate(360deg);
+}
+
+.skill-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .skill-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
