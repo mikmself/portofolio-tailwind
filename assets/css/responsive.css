@@ -108,4 +108,10 @@
     .testimonial-item p{
         font-size: 12px !important;
     }
+    #personal-interests{
+        padding: .5cm;
+    }
+    #personal-interests .interest-card{
+        width: 100% !important;
+    }
 }
