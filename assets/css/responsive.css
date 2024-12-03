@@ -99,4 +99,13 @@
         padding: 2px 10px 2px 10px  !important;
         border-radius: 10px;
     }
+    .testimonial-item{
+        width: 85%;
+    }
+    blockquote{
+        font-size: 14px !important;
+    }
+    .testimonial-item p{
+        font-size: 12px !important;
+    }
 }
