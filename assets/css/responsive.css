@@ -1,4 +1,10 @@
 @media (max-width: 768px) {
+    h1,h2{
+        font-size: 25px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
     nav{
         max-width: 100vw !important;
     }
@@ -8,15 +14,11 @@
         margin-top: 2cm;
     }
     #home h1{
-        font-size: 25px;
         margin-top: 1cm;
     }
     #home p{
-        font-size: 14px;
         margin-top: -.5cm;
     }
-
-
     .btn-lets-chat, .btn-download {
         width: 90%;
         padding: 5px;
@@ -69,7 +71,12 @@
     #about {
         padding: .5cm !important;
     }
-
+    #about p.text-desc{
+        margin-top: -.7cm;
+    }
+    .timeline-journey{
+        height: 11cm !important;
+    }
     .skill-cards {
         grid-template-columns: 1fr 1fr;
     }
