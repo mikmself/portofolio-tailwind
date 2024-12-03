@@ -285,41 +285,43 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="bg-white py-16">
-        <div class="container mx-auto text-center">
-            <div class="container mx-auto text-center">
-                <div class="social-icons mb-6">
-                    <h2 class="text-3xl font-semibold mb-3">Find Me On</h2>
-                    <div class="icons">
-                        <a href="https://github.com/mikmself" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://t.me/ploglamel" class="social-icon">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="https://wa.me/6281229473829" class="social-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mikmself/" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.facebook.com/muhamadirga.khoirulmahfis.9" class="social-icon">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/mikmself/" class="social-icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+    <section id="contact" class="relative bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 py-20">
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-5xl font-extrabold text-white mb-8 animate__animated animate__fadeIn animate__delay-1s">Let's Connect!</h2>
+            
+            <!-- Social Links -->
+            <div class="social-icons mb-12 animate__animated animate__fadeIn animate__delay-1s">
+                <h3 class="text-2xl font-medium text-white mb-6">Find Me On</h3>
+                <div class="flex justify-center gap-8">
+                    <a href="https://github.com/mikmself" class="social-icon">
+                        <i class="fab fa-github text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
+                    <a href="https://t.me/ploglamel" class="social-icon">
+                        <i class="fab fa-telegram text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
+                    <a href="https://wa.me/6281229473829" class="social-icon">
+                        <i class="fab fa-whatsapp text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mikmself/" class="social-icon">
+                        <i class="fab fa-linkedin text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
+                    <a href="https://www.facebook.com/muhamadirga.khoirulmahfis.9" class="social-icon">
+                        <i class="fab fa-facebook text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mikmself/" class="social-icon">
+                        <i class="fab fa-instagram text-white text-3xl hover:text-gray-100 transition duration-300 transform hover:scale-110"></i>
+                    </a>
                 </div>
-                <form class="contact-form" id="contact-form">
-                    <h2 class="text-3xl font-semibold mb-6">Contact</h2>
-                    <input type="text" placeholder="Name" class="input-field mb-3" id="user_name" name="user_name">
-                    <input type="email" placeholder="Email" class="input-field mb-3" id="user_email" name="user_email">
-                    <textarea placeholder="Message" class="input-field mb-3" style="height: 150px;" id="message" name="message"></textarea>
-                    <br>
-                    <button type="submit" class="submit-button">Submit</button>
-                </form>
             </div>
+    
+            <!-- Contact Form -->
+            <form class="contact-form max-w-2xl mx-auto shadow-lg rounded-lg bg-white p-8" id="contact-form">
+                <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800">Get In Touch</h2>
+                <input type="text" placeholder="Your Name" class="input-field mb-6 p-4 rounded-lg border border-gray-300 shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-indigo-400 transition duration-300" id="user_name" name="user_name">
+                <input type="email" placeholder="Your Email" class="input-field mb-6 p-4 rounded-lg border border-gray-300 shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-indigo-400 transition duration-300" id="user_email" name="user_email">
+                <textarea placeholder="Your Message" class="input-field mb-6 p-4 rounded-lg border border-gray-300 shadow-sm w-full focus:outline-none focus:ring-2 focus:ring-indigo-400 transition duration-300" style="height: 180px;" id="message" name="message"></textarea>
+                <button type="submit" class="submit-button px-8 py-4 bg-indigo-600 text-white text-xl font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300">Send Message</button>
+            </form>
         </div>
     </section>
     <footer class="bg-black text-white text-center py-4">

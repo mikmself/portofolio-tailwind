@@ -471,3 +471,14 @@ blockquote {
 }
 
 
+/* Additional CSS for smooth transitions */
+input, textarea {
+    transition: all 0.3s ease;
+    color: black;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4c51bf;
+    box-shadow: 0 0 0 2px rgba(76, 81, 191, 0.3);
+}
