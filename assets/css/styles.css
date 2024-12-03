@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,8 +6,6 @@ body {
     background-color: #1a1a1a;
     color: #fff;
 }
-
-/* Button Styles */
 .btn-lets-chat, .btn-download {
     padding: 10px 20px;
     border: 2px solid #ffffff;
@@ -38,7 +35,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Fade-in Animation */
 @keyframes fade-in {
     0% {
         opacity: 0;
@@ -53,7 +49,6 @@ body {
     animation: fade-in 1s ease-out;
 }
 
-/* Scroll Effect */
 @keyframes scroll-effect {
     0% {
         opacity: 0;
@@ -68,14 +63,12 @@ body {
     animation: scroll-effect 1s ease-out;
 }
 
-/* Home Section */
 #home .bg-cover {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-/* Glass Effect */
 #home .glass-effect {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -84,7 +77,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Hover Effect */
 .image-content img:hover {
     transform: rotate(5deg) scale(1.1);
 }
@@ -104,10 +96,9 @@ body {
     background: linear-gradient(90deg, #9b59b6, #e91e63);
     background-clip: text;
     color: transparent;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Lighter text shadow for subtle effect */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Timeline */
 .timeline-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -160,63 +151,6 @@ body {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    #home .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .text-content {
-        margin-top: 1cm;
-    }
-    .btn-lets-chat, .btn-download {
-        width: 100%;
-        padding: 15px;
-        margin-top: 10px;
-    }
-    .image-content img {
-        max-width: 60%;
-    }
-    /* Timeline Layout for Mobile */
-    .timeline-container {
-        grid-template-columns: 1fr;
-    }
-    .timeline-item {
-        margin-bottom: 2rem;
-    }
-    .nav-links {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #1a1a1a;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-        display: none;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-    .nav-links li {
-        padding: 1cm;
-    }
-    .nav-links.active {
-        display: flex;
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .hamburger-menu {
-        display: flex;
-    }
-    #about {
-        padding: .5cm !important;
-    }
-}
-
-/* Navbar */
 nav {
     position: fixed;
     width: 100%;
@@ -257,7 +191,6 @@ nav {
     color: #ec4899;
 }
 
-/* Hamburger Menu */
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -270,21 +203,19 @@ nav {
     background-color: white;
     border-radius: 5px;
 }
-/* General Section Styles */
+
 #skills {
     background: linear-gradient(135deg, #6a1b9a, #3f51b5, #2196f3);
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
-/* Title Styles */
 #skills h2 {
     font-size: 2.5rem;
     color: white;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-/* Tab Button Styles */
 .skill-tab {
     font-size: 1.125rem;
     padding: 12px 24px;
@@ -299,14 +230,12 @@ nav {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Active Tab Style */
 .skill-tab.active {
     background: white;
     color: #3f51b5;
     border-color: #3f51b5;
 }
 
-/* Skill Card Styles */
 .skill-cards {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
@@ -331,22 +260,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Atur tinggi icon */
-    margin-bottom: 20px; /* Menambahkan jarak antara gambar dan judul skill */
+    height: 100px; 
+    margin-bottom: 20px; 
 }
 
 .skill-icon img {
-    width: 70px; /* Ukuran lebih besar untuk gambar */
-    height: 70px; /* Ukuran lebih besar untuk gambar */
-    object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+    width: 70px; 
+    height: 70px; 
+    object-fit: contain; 
     transition: transform 0.3s ease;
 }
-
-/* Efek Hover pada Gambar */
-.skill-card:hover .skill-icon img {
-    transform: scale(1.2); /* Membesarkan gambar sedikit saat hover */
-}
-
 
 .skill-card:hover .skill-icon img {
     transform: rotate(360deg);
@@ -359,13 +282,6 @@ nav {
     margin-top: 15px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .skill-cards {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-/* General Styles */
 #testimonials {
     position: relative;
     background: linear-gradient(135deg, #3b0086, #e91e63, #ff9800);
@@ -373,14 +289,12 @@ nav {
     height: 20cm;
 }
 
-/* Heading */
 #testimonials h2 {
     font-size: 3.5rem;
     color: white;
     text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Testimonial Items */
 .testimonial-item {
     position: absolute;
     left: 50%;
@@ -407,7 +321,6 @@ blockquote {
     line-height: 1.75;
 }
 
-/* Slider Controls */
 .slider-controls button {
     display: inline-flex;
     align-items: center;
@@ -420,4 +333,61 @@ blockquote {
 
 .slider-controls button:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #home .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-content {
+        margin-top: 1cm;
+    }
+    .btn-lets-chat, .btn-download {
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .image-content img {
+        max-width: 60%;
+    }
+    .timeline-container {
+        grid-template-columns: 1fr;
+    }
+    .timeline-item {
+        margin-bottom: 2rem;
+    }
+    .nav-links {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .nav-links li {
+        padding: 1cm;
+    }
+    .nav-links.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    #about {
+        padding: .5cm !important;
+    }
+    .skill-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }

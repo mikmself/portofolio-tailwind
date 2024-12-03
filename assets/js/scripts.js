@@ -4,115 +4,147 @@ const skillsData = {
     library: ['REACT', 'TAILWIND', 'SASS', 'NUMPY', 'PANDAS', 'SCKIT LEARN', 'JQUERY', 'AXIOS', 'CHART JS', 'MATERIAL UI'],
     dbms: ['MYSQL', 'MONGO DB', 'SQL SERVER', 'MICROSOFT ACCESS', 'ORACLE', 'POSTGRE SQL']
 };
+const SkillTabs = {
+    skillTabs: document.querySelectorAll('.skill-tab'),
+    skillCardsContainer: document.querySelector('.skill-cards'),
 
-const skillTabs = document.querySelectorAll('.skill-tab');
-const skillCardsContainer = document.querySelector('.skill-cards');
-function generateSkillCards(tab) {
-    const tabName = tab.dataset.tab;
-    const skills = skillsData[tabName];
-    if (!skills) return;
-    const cardsHTML = skills.map(skill => `
-        <div class="skill-card">
-            <div class="skill-icon">
-                <img src="/assets/images/icons/${skill}.svg" alt="${skill}" onerror="this.onerror=null;this.src='/assets/images/icons/default.svg';">
+    generateSkillCards(tab) {
+        const tabName = tab.dataset.tab;
+        const skills = skillsData[tabName];
+        if (!skills) return;
+        const cardsHTML = skills.map(skill => `
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="/assets/images/icons/${skill}.svg" alt="${skill}" onerror="this.onerror=null;this.src='/assets/images/icons/default.svg';">
+                </div>
+                <div class="skill-title">${skill}</div>
             </div>
-            <div class="skill-title">${skill}</div>
-        </div>
-    `).join('');
-    skillCardsContainer.innerHTML = cardsHTML;
-}
-generateSkillCards(skillTabs[0]); 
-skillTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        skillTabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        generateSkillCards(tab);
-    });
-});
-document.getElementById('current-year').textContent = new Date().getFullYear();
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const name = document.getElementById('user_name').value;
-    const email = document.getElementById('user_email').value;
-    const message = document.getElementById('message').value;
-    if (!name || !email || !message) {
-        alert('Please fill in all the fields.');
-        return;
-    }
-    const subject = `Contact Form Submission from ${email}`;
-    const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
-    window.location.href = `mailto:mikmself@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
-window.addEventListener('load', function() {
-    const homeSection = document.querySelector('#home');
-    homeSection.classList.add('animate-scroll');
-});
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetElement = document.getElementById(this.getAttribute('href').substring(1));
-        window.scrollTo({
-            top: targetElement.offsetTop - 50,
-            behavior: 'smooth'
+        `).join('');
+        this.skillCardsContainer.innerHTML = cardsHTML;
+    },
+
+    init() {
+        this.generateSkillCards(this.skillTabs[0]); 
+        this.skillTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                this.skillTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                this.generateSkillCards(tab);
+            });
         });
-    });
-});
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const navLinks = document.getElementById('nav-links');
-hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-const testimonials = document.querySelectorAll('.testimonial-item');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-let currentSlide = 0;
-let interval;
+    }
+};
+const ContactForm = {
+    form: document.getElementById('contact-form'),
 
-// Fungsi untuk memperbarui testimonial
-function updateTestimonials(index) {
-    testimonials.forEach((testimonial, i) => {
-        testimonial.classList.remove('active');
-        if (i === index) {
-            testimonial.classList.add('active');
+    handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('user_name').value;
+        const email = document.getElementById('user_email').value;
+        const message = document.getElementById('message').value;
+        if (!name || !email || !message) {
+            alert('Please fill in all the fields.');
+            return;
         }
-    });
-}
+        const subject = `Contact Form Submission from ${email}`;
+        const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+        window.location.href = `mailto:mikmself@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    },
 
-// Fungsi untuk berganti ke slide berikutnya
-function goToNextSlide() {
-    currentSlide = (currentSlide + 1) % testimonials.length;
-    updateTestimonials(currentSlide);
-}
+    init() {
+        this.form.addEventListener('submit', this.handleSubmit);
+    }
+};
+const ScrollAnimation = {
+    init() {
+        window.addEventListener('load', () => {
+            const homeSection = document.querySelector('#home');
+            homeSection.classList.add('animate-scroll');
+        });
+    }
+};
+const SmoothScroll = {
+    init() {
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetElement = document.getElementById(this.getAttribute('href').substring(1));
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }
+};
+const HamburgerMenu = {
+    hamburgerMenu: document.getElementById('hamburger-menu'),
+    navLinks: document.getElementById('nav-links'),
 
-// Fungsi untuk berganti ke slide sebelumnya
-function goToPrevSlide() {
-    currentSlide = (currentSlide - 1 + testimonials.length) % testimonials.length;
-    updateTestimonials(currentSlide);
-}
+    toggleMenu() {
+        this.navLinks.classList.toggle('active');
+    },
 
-// Event listener untuk tombol previous
-prevBtn.addEventListener('click', () => {
-    goToPrevSlide();
-    resetAutoChange();  // Reset otomatis berganti saat interaksi
+    init() {
+        this.hamburgerMenu.addEventListener('click', () => this.toggleMenu());
+    }
+};
+const TestimonialsSlider = {
+    testimonials: document.querySelectorAll('.testimonial-item'),
+    prevBtn: document.querySelector('.prev-btn'),
+    nextBtn: document.querySelector('.next-btn'),
+    currentSlide: 0,
+    interval: null,
+
+    updateTestimonials(index) {
+        this.testimonials.forEach((testimonial, i) => {
+            testimonial.classList.remove('active');
+            if (i === index) {
+                testimonial.classList.add('active');
+            }
+        });
+    },
+
+    goToNextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.testimonials.length;
+        this.updateTestimonials(this.currentSlide);
+    },
+
+    goToPrevSlide() {
+        this.currentSlide = (this.currentSlide - 1 + this.testimonials.length) % this.testimonials.length;
+        this.updateTestimonials(this.currentSlide);
+    },
+
+    startAutoChange() {
+        this.interval = setInterval(() => this.goToNextSlide(), 3000);  // Change every 3 seconds
+    },
+
+    resetAutoChange() {
+        clearInterval(this.interval);
+        this.startAutoChange();
+    },
+
+    init() {
+        this.updateTestimonials(this.currentSlide);
+        this.startAutoChange();
+
+        this.prevBtn.addEventListener('click', () => {
+            this.goToPrevSlide();
+            this.resetAutoChange();
+        });
+
+        this.nextBtn.addEventListener('click', () => {
+            this.goToNextSlide();
+            this.resetAutoChange();
+        });
+    }
+};
+document.addEventListener('DOMContentLoaded', () => {
+    SkillTabs.init();
+    ContactForm.init();
+    ScrollAnimation.init();
+    SmoothScroll.init();
+    HamburgerMenu.init();
+    TestimonialsSlider.init();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 });
-
-// Event listener untuk tombol next
-nextBtn.addEventListener('click', () => {
-    goToNextSlide();
-    resetAutoChange();  // Reset otomatis berganti saat interaksi
-});
-
-// Fungsi untuk memulai otomatis berganti testimonial
-function startAutoChange() {
-    interval = setInterval(goToNextSlide, 3000);  // Ganti slide setiap 3 detik
-}
-
-// Fungsi untuk reset interval otomatis ketika ada interaksi
-function resetAutoChange() {
-    clearInterval(interval);  // Hentikan interval yang sedang berjalan
-    startAutoChange();  // Mulai interval kembali
-}
-
-// Inisialisasi load pertama dan mulai otomatis berganti
-updateTestimonials(currentSlide);
-startAutoChange();
