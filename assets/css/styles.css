@@ -391,3 +391,83 @@ blockquote {
         grid-template-columns: 1fr 1fr;
     }
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.6;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        opacity: 0.6;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+}
+.interest-card {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+.interest-card:hover .card-overlay {
+    opacity: 1;
+}
+.interest-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.interest-card:hover img {
+    transform: scale(1.15);
+}
+#personal-interests {
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#personal-interests .container {
+    position: relative;
+    z-index: 2;
+}
+
+#personal-interests h2 {
+    animation: fadeIn 1s ease-out;
+    color: white;
+}
+
+#personal-interests p {
+    animation: fadeIn 1.5s ease-out;
+    color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
